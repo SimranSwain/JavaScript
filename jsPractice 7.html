@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interaction using Alert,Prompt,Confirm</title>
+</head>
+
+<body>
+
+    <div class="container">
+        How are you?
+    </div>
+    <script>
+        // Alert in in_browser js.
+        alert("Hii i am Simran"); //it will pop up a modal window.
+
+        let a = alert("Hii i am Simran");
+        console.log(a);   // it doesnot return anything i.e. its output will be undefined.
+
+        //Prompt
+
+        let age = prompt("How old are you?"); //here Guest is the default argument.
+        console.log(age);
+
+        if(age>18){
+            console.log("you are allowed inside the club");
+        }
+        else {
+            console.log("you are not allowed")
+        }
+
+        //Confirm in js
+
+        let deletePost = confirm("Do you really want to delete this Post?");
+       // console.log(deletePost);
+        
+        if (deletePost) {
+            console.log("your post has deleted successfully");
+        }
+        else {
+            console.log("your post hasnot deleted successfully");
+        }
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
