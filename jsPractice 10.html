@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js Events</title>
+</head>
+<style>
+    #btn{
+        padding: 10px 14px;
+        background-color: cornflowerblue;
+        border: 2px solid black;
+        color: brown;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="container">
+        <h2>This is my heading</h2>
+       <p id="para"> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Libero beatae incidunt sit est expedita magni eveniet maiores?
+         Libero distinctio, 
+        ullam facilis minus numquam ab id impedit quae eos iure ratione autem.
+         Ipsa, veniam exercitationem iste voluptatum nemo mollitia repudiandae 
+         officiis. </p>
+    </div>
+    <button id="btn" onclick="togglehide()">Show/Hide</button>
+    <script>
+        // let para = document.getElementById('para');
+        // para.addEventListener('mouseover',function run(){
+        //     alert("Mouse inside")
+        // })
+        // para.addEventListener('mouseout',function run(){
+        //     alert("Mouse outside")
+        // })
+      
+
+
+        function togglehide(){                                  //here togglehide() defines.
+           let btn = document.getElementById('btn');
+           let para = document.getElementById('para');
+        //    if( para.style.display != "none"){
+        //     para.style.display= "none";  
+        //    }
+        //   else{
+        //     para.style.display= "block";
+        //   }
+           
+        }
+    </script>
+    
+</body>
+</html>
