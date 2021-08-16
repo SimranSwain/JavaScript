@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+</head>
+<body>
+    <div class="container">
+       <h4> Another container</h4>
+       <ul>
+           <li>hii there</li>
+           <li>hii there</li>
+           <li>hii there</li>
+           <li>hii there</li>
+           <li>hii there</li>
+           <li>hii there</li>
+           <li>hii there</li>
+           <li>hii there</li>
+       </ul>
+    </div>
+
+    <div id="main"class="container">
+        <!-- shortcut   ul>li*5 -->
+        <ul id="nav">                
+            <li>Home</li>
+            <li>Contact us</li>
+            <li>Services</li>
+            <li>About</li>
+            <li>More about us</li>
+        </ul>
+    </div>
+
+
+     <script>
+        // let main = document.getElementById('main');  //it will get the elements under the main id
+        // console.log(main);
+        // let nav = document.getElementById('nav');
+        // console.log(nav);
+
+        
+
+
+        // let containers= document.getElementsByClassName('container') //it will return the class whose class name is container
+        // console.log(containers);
+
+        // let sel = document.querySelector('.container');   //it will return the first class whose class name is container(if same class name has given to 2 <div> then it will print the first class name) using CSS selector
+        // console.log("Selector returns ",sel)
+        
+        // let sel1 = document.querySelector('#nav');   //it will return the  id whose class name is nav using CSS selector
+        // console.log("Selector returns ",sel1)
+       
+       
+        let sel1 = document.querySelector('#nav>li');   //it will return the first list in the id whose class name is nav using CSS selector
+        console.log("Selector returns ",sel1)
+       
+       
+        // let sel1 = document.querySelectorAll('#nav>li');   //it will return all the lists in the id whose class name is nav using CSS selector
+        // console.log("Selector returns ",sel1)
+
+
+    </script> 
+</body>
+</html>
